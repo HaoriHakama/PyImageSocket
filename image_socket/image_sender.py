@@ -24,4 +24,3 @@ def send_cv2_image(image, text, host="localhost", port=9008):
         s.sendall(b64_image)
         s.sendall(len(encoded_text).to_bytes(4, byteorder="big"))
         s.sendall(encoded_text)
-
